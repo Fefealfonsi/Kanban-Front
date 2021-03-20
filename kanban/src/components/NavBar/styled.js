@@ -18,10 +18,15 @@ export const NavBarContainer = styled.div`
     h3{
         font-family: 'Lobster', cursive;
         font-size:34px;
-        margin-right:580px;
+        
+        
     }
 `
-        
+export const Logo  = styled.div`
+display:flex;
+align-items:center;
+
+`   
 export const TextFieldStyled  = styled(TextField)`
     border:none;
     background-color:white;

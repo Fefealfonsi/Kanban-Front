@@ -29,7 +29,10 @@ font-family:'Open Sans', sans-serif;
 margin-bottom:07px;
   
 `
-
+export const Edit = styled.img`
+justify-self:flex-end;
+  
+`
 export const Content = styled.p`
 font-family:'Open Sans', sans-serif;
 text-align:justify;
@@ -37,7 +40,7 @@ text-align:justify;
 `
 export const CompletedCard = styled.div`
     padding:8px;
-    width:260px;
+    width:90%;
     margin:10px;
     border: none;
     font-family:'Open Sans', sans-serif;
@@ -46,6 +49,8 @@ export const CompletedCard = styled.div`
 
 export const Footer = styled.div`
 display:flex;
+justify-content:space-between;
+width:90%;
 
 ` 
 export const ButtonCard = styled.button`

@@ -7,6 +7,7 @@ export function useRequestData(url, estadoInicial) {
     const token = localStorage.getItem("token")
 
     function getData(){
+        console.log("chegou até aqui!!!!")
         axios
         .get(url, {
           headers:{

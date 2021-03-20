@@ -4,7 +4,7 @@ import { createCards } from "../../services/cards";
 import { useRequestData } from "../../hooks/useRequestData";
 import { CardContainer, Title, Content, Button, FormContainer } from "./styled";
 
-function Card() {
+function CreateCard(props) {
   
 
   const { form, onChange, resetForm } = useForm({
@@ -17,10 +17,9 @@ function Card() {
     onChange(value, name);
   };
 
-  const handleSubmission = (event) => {
+  const handleSubmission = async(event) => {
     event.preventDefault();
-
-    createCards(form, resetForm);
+    await createCards(form, resetForm, props.getData);
   };
 
   
@@ -46,4 +45,4 @@ function Card() {
     </CardContainer>
   );
 }
-export default Card;
+export default CreateCard;

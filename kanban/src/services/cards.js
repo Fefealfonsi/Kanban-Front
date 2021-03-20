@@ -1,13 +1,11 @@
 import axios from "axios"
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 
 const BASE_URL = "http://localhost:5000"
 
-export const createCards = (body, resetForm) => {
+export const createCards = async(body, resetForm, getData) => {
     const token = localStorage.getItem("token")
 
-    // console.log("BODY",body,"GETDATA",getData)
-    
     if(!token){
         alert("Por Favor faça seu login")
     }
@@ -18,9 +16,9 @@ export const createCards = (body, resetForm) => {
         }
     }).then((response) => {
         console.log("CREATE CARD",body)
-        // getData()
+        getData()
         resetForm()
-        
+        window.location.href = "/";
         
     }).catch(error => {
         console.log(error.message)
@@ -28,7 +26,7 @@ export const createCards = (body, resetForm) => {
     })
 }
 
-export const deleteCard = (id) => {
+export const deleteCard = (id, getData) => {
     const token = localStorage.getItem("token")
 
    
@@ -42,6 +40,9 @@ export const deleteCard = (id) => {
         }
     }).then((response) => {
         console.log("deletou")
+        getData()
+        
+
         // getData()
         // resetForm()
         
@@ -51,11 +52,10 @@ export const deleteCard = (id) => {
     })
 }
 
-export const updateCard = (body, resetForm,id) => {
+export const updateCard = (body, resetForm,id, getData, save, setSave) => {
     const token = localStorage.getItem("token")
 
-    // console.log("BODY",body,"GETDATA",getData)
-    
+        
     if(!token){
         alert("Por Favor faça seu login")
     }
@@ -66,8 +66,10 @@ export const updateCard = (body, resetForm,id) => {
         }
     }).then((response) => {
         console.log("UPDATE CARD",body)
-        // getData()
         resetForm()
+
+        getData()
+        setSave(!save)
         
     }).catch(error => {
         console.log(error.message)
