@@ -1,6 +1,10 @@
-import React from 'react';
+import React from "react";
+import { useForm } from "../../hooks/useForm";
+import { createCards } from "../../services/cards";
+import { useRequestData } from "../../hooks/useRequestData";
+import { CardContainer, Title, Content, Button, FormContainer } from "./styled";
 
-function UpdateCard(props) {
+function Card() {
   
 
   const { form, onChange, resetForm } = useForm({
@@ -16,9 +20,10 @@ function UpdateCard(props) {
   const handleSubmission = (event) => {
     event.preventDefault();
 
-    updateCard(form, resetForm, props.id);
+    createCards(form, resetForm);
   };
 
+  
   return (
     <CardContainer>
       <FormContainer onSubmit={handleSubmission}>
@@ -30,16 +35,15 @@ function UpdateCard(props) {
           onChange={handleInputChange}
         />
         <Content
-         
           value={form.content}
           name="content"
           placeholder="Conteúdo"
           onChange={handleInputChange}
         />
 
-        <Button>Alterar </Button>
+        <Button>Salvar </Button>
       </FormContainer>
     </CardContainer>
   );
 }
-export default UpdateCard;
+export default Card;

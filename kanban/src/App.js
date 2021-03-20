@@ -1,13 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Card from './components/Card';
-import BoardPage from './pages/BoardPage';
+import React from 'react';
+import './App.css'
+import BoardPage from './pages/BoardPage/BoardPage';
+
+
 
 function App() {
   return (
-    <div>
-      <BoardPage/>
-    </div>
+
+   <div>
+       <BoardPage/>
+   </div>
+     
   );
 }
 
