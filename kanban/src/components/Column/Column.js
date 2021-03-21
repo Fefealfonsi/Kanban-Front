@@ -15,7 +15,6 @@ function Column(props) {
     data.result.map((card) => {
       if (props.column === "To Do") {
         if (card.list === "ToDo") {
-
           return (
             <Card
               key={card.id}
@@ -35,7 +34,6 @@ function Column(props) {
     data.result.map((card) => {
       if (props.column === "Doing") {
         if (card.list === "Doing") {
-
           return (
             <Card
               key={card.id}
@@ -55,7 +53,6 @@ function Column(props) {
     data.result.map((card) => {
       if (props.column === "Done") {
         if (card.list === "Done") {
-
           return (
             <Card
               key={card.id}
@@ -72,9 +69,7 @@ function Column(props) {
 
   const renderNewCard = () => {
     if (props.column === "New") {
-      return <CreateCard 
-      getData={getData}
-      />;
+      return <CreateCard getData={getData} />;
     }
   };
 

@@ -4,14 +4,14 @@ import {
   Title,
   Content,
   CompletedCard,
-   EditButton,
-   EditContainer
+  EditButton,
+  EditContainer,
 } from "./styled";
 
 import UpdateCard from "../UpdateCard/UpdateCard";
 
 import edit from "../../img/border_color-black-24dp.svg";
-import Footer from "../Footer/Footer"
+import Footer from "../Footer/Footer";
 
 function Card(props) {
   const [isEditing, setIsEditing] = useState(false);
@@ -19,11 +19,13 @@ function Card(props) {
   const renderCard = () => {
     return !isEditing ? (
       <CardContainer>
-         <EditContainer>
-           <EditButton
-          onClick={() => {setIsEditing(!isEditing)}}
+        <EditContainer>
+          <EditButton
+            onClick={() => {
+              setIsEditing(!isEditing);
+            }}
           >
-          <img src={edit} />
+            <img src={edit} />
           </EditButton>
         </EditContainer>
 
@@ -32,12 +34,7 @@ function Card(props) {
           <Content>{props.content}</Content>
         </CompletedCard>
 
-        <Footer
-        id={props.id}
-        getData={props.getData}
-        column={props.column}
-        />
-
+        <Footer id={props.id} getData={props.getData} column={props.column} />
       </CardContainer>
     ) : (
       <UpdateCard

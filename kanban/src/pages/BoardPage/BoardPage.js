@@ -1,5 +1,5 @@
 import React from "react";
-import { BoardContainer, ListContainer } from "./styled";
+import {ListContainer } from "./styled";
 import NavBar from "../../components/NavBar/NavBar";
 import Column from "../../components/Column/Column";
 function BoardPage() {
