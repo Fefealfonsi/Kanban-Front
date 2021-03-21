@@ -7,10 +7,10 @@ function BoardPage() {
     <div>
       <NavBar />
       <ListContainer>
-        <Column name={"New"} />
-        <Column name={"To Do"} />
-        <Column name={"Doing"} />
-        <Column name={"Done"} />
+        <Column column={"New"} />
+        <Column column={"To Do"} />
+        <Column column={"Doing"} />
+        <Column column={"Done"} />
       </ListContainer>
     </div>
   );

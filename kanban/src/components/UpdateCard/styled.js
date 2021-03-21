@@ -7,7 +7,7 @@ flex-direction: column;
 width:92%;
 height: 100%;
 margin:15px;
-background-color:rgb(172,199,206);
+background-color:#ebd2cb;
 
 align-items: center;
  
@@ -44,7 +44,7 @@ export const Content = styled.textarea`
 `
 export const Button = styled.button`
 width:30%;
-background-color: #ebd2cb;
+background-color:rgb(172,199,206);
 margin:10px 0px;
 border:none;
 padding:10px;

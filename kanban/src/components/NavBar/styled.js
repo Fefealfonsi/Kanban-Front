@@ -49,6 +49,7 @@ export const FormContainer = styled.form`
     
 `
 export const ButtonEffect=styled.button`
+   width:90px;
   border-radius:10%;
   margin-right:30px;
   z-index: 1;

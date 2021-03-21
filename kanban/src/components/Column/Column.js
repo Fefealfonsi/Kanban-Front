@@ -13,7 +13,7 @@ function Column(props) {
   const renderToDo =
     data &&
     data.result.map((card) => {
-      if (props.name === "To Do") {
+      if (props.column === "To Do") {
         if (card.list === "ToDo") {
 
           return (
@@ -23,6 +23,7 @@ function Column(props) {
               subtitle={card.subtitle}
               content={card.content}
               getData={getData}
+              column={props.column}
             />
           );
         }
@@ -32,7 +33,7 @@ function Column(props) {
   const renderDoing =
     data &&
     data.result.map((card) => {
-      if (props.name === "Doing") {
+      if (props.column === "Doing") {
         if (card.list === "Doing") {
 
           return (
@@ -42,6 +43,7 @@ function Column(props) {
               subtitle={card.subtitle}
               content={card.content}
               getData={getData}
+              column={props.column}
             />
           );
         }
@@ -51,7 +53,7 @@ function Column(props) {
   const renderDone =
     data &&
     data.result.map((card) => {
-      if (props.name === "Done") {
+      if (props.column === "Done") {
         if (card.list === "Done") {
 
           return (
@@ -61,6 +63,7 @@ function Column(props) {
               subtitle={card.subtitle}
               content={card.content}
               getData={getData}
+              column={props.column}
             />
           );
         }
@@ -68,7 +71,7 @@ function Column(props) {
     });
 
   const renderNewCard = () => {
-    if (props.name === "New") {
+    if (props.column === "New") {
       return <CreateCard 
       getData={getData}
       />;
@@ -77,7 +80,7 @@ function Column(props) {
 
   return (
     <ColumnContainer>
-      <h3>{props.name}</h3>
+      <h3>{props.column}</h3>
       {renderNewCard()}
       {renderToDo}
       {renderDoing}
