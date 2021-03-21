@@ -17,4 +17,9 @@ h3{
      color:rgba(73, 113, 82);
      
  }
+
+ @media (min-device-width: 320px) and (max-device-width: 420px) {
+    width:95vw;
+    
+  }
 `

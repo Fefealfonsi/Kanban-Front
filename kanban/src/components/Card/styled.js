@@ -3,7 +3,6 @@ import styled from "styled-components"
 export const CardContainer = styled.div`
 display:flex;
 flex-direction: column;
-/* justify-content:space-between; */
 width:92%;
 height: 100%;
 margin:15px;
@@ -29,10 +28,7 @@ font-family:'Open Sans', sans-serif;
 margin-bottom:07px;
   
 `
-export const Edit = styled.img`
-justify-self:flex-end;
-  
-`
+
 export const Content = styled.p`
 font-family:'Open Sans', sans-serif;
 text-align:justify;
@@ -47,13 +43,36 @@ export const CompletedCard = styled.div`
     background: white;
 `
 
-export const Footer = styled.div`
+// export const Footer = styled.div`
+// display:flex;
+// justify-content:space-between;
+// width:90%;
+// ` 
+
+export const EditContainer = styled.div`
 display:flex;
-justify-content:space-between;
+justify-content:flex-end;
 width:90%;
+`
+export const ButtonCard = styled.button`
+display:flex;
+background-color: #ebd2cb;
+margin:07px;
+border:none;
+padding:09px;
+border-radius:50%;
+outline:none;
+
+:hover {
+  cursor: pointer;
+  background-color:#a78a95;
+}
+img{
+width:20px;
+}
 
 ` 
-export const ButtonCard = styled.button`
+export const EditButton = styled.button`
 display:flex;
 background-color: #ebd2cb;
 margin:07px;
