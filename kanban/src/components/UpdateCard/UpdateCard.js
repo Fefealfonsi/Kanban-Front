@@ -1,11 +1,9 @@
-import React from 'react';
-import {useForm} from "../../hooks/useForm"
-import {updateCard} from "../../services/cards"
-import { CardContainer, Title, Content, Button, FormContainer } from './styled';
+import React from "react";
+import { useForm } from "../../hooks/useForm";
+import { updateCard } from "../../services/cards";
+import { CardContainer, Title, Content, Button, FormContainer } from "./styled";
 
 function UpdateCard(props) {
-  
-
   const { form, onChange, resetForm } = useForm({
     subtitle: props.title,
     content: props.text,
@@ -19,7 +17,14 @@ function UpdateCard(props) {
   const handleSubmission = (event) => {
     event.preventDefault();
 
-    updateCard(form, resetForm, props.id, props.getData, props.save, props.setSave);
+    updateCard(
+      form,
+      resetForm,
+      props.id,
+      props.getData,
+      props.save,
+      props.setSave
+    );
   };
 
   return (
@@ -33,14 +38,13 @@ function UpdateCard(props) {
           onChange={handleInputChange}
         />
         <Content
-         
           value={form.content}
           name="content"
           placeholder="Conteúdo"
           onChange={handleInputChange}
         />
 
-        <Button >Alterar </Button>
+        <Button>Alterar </Button>
       </FormContainer>
     </CardContainer>
   );
