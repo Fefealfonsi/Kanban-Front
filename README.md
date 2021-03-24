@@ -4,7 +4,7 @@
 <div style="text-align:center"><img src="https://user-images.githubusercontent.com/71261731/111891653-1fd3a180-89d3-11eb-9406-9d3e50684664.png" alt="Logotipo" /></div>
 
 
-<h1> 📋 LetsList </h1>
+<h1> 📋 Lets List </h1>
 <h4>O projeto consiste e m uma página para organização de tarefas (kanban)
 Suas funcionalidades são: </h4>
 <p> 1-) Criar um cartão.</p>
@@ -28,5 +28,8 @@ Suas funcionalidades são: </h4>
 
 <h4> ⚠️ Obs.: A implementação desses componentes ficou em segundo plano, pois não eram essenciais para o funcionamento da aplicação. Não foram implementados por falta de tempo.</h4>
 <h4> ⚠️ Obs2.: Fiz três ".maps()" no componente "Column.js", pois só assim consegui atingir o objeivo, sei que não estava bom , porém, só após a entrega, descobrí como resolver o problema de renderização que estava tendo.</h4>
+
+![image](https://user-images.githubusercontent.com/71261731/112376104-cfa25b00-8cc2-11eb-900e-5579f8fc9bc3.png)
+
 
 
