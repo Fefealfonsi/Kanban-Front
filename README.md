@@ -22,12 +22,11 @@ Suas funcionalidades são: </h4>
 <p> 2-) Styled Components </p>
 <p> 3-) Axios </p>
 
-<h1> ✳️ Componentes ainda não implementados </h1>
+<h1> ✳️ CFuncionalidades ainda não implementados </h1>
 <p> 1-) Caixa de texto que aceita linguagem markdown </p>
 <p>2-) Botão que cancela edição no modo “Edição” </p>
 
-<h4> ⚠️ Obs.: A implementação desses componentes ficou em segundo plano, pois não eram essenciais para o funcionamento da aplicação. Não foram implementados por falta de tempo.</h4>
-<h4> ⚠️ Obs2.: Fiz três ".maps()" no componente "Column.js", pois só assim consegui atingir o objeivo, sei que não estava bom , porém, só após a entrega, descobrí como resolver o problema de renderização que estava tendo.</h4>
+
 
 ![image](https://user-images.githubusercontent.com/71261731/112376104-cfa25b00-8cc2-11eb-900e-5579f8fc9bc3.png)
 
