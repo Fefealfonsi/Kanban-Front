@@ -22,7 +22,7 @@ Suas funcionalidades são: </h4>
 <p> 2-) Styled Components </p>
 <p> 3-) Axios </p>
 
-<h1> ✳️ CFuncionalidades ainda não implementados </h1>
+<h1> ✳️ Funcionalidades ainda não implementadas </h1>
 <p> 1-) Caixa de texto que aceita linguagem markdown </p>
 <p>2-) Botão que cancela edição no modo “Edição” </p>
 
