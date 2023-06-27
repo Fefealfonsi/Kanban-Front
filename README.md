@@ -1,5 +1,5 @@
 
-<h1 align="center"> 🗃️ Kanaban-Front</h1> 
+<h1 align="center"> 🗃️ Kanban-Front</h1> 
 
 <div style="text-align:center"><img src="https://user-images.githubusercontent.com/71261731/111891653-1fd3a180-89d3-11eb-9406-9d3e50684664.png" alt="Logotipo" /></div>
 
